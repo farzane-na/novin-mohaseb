@@ -13,6 +13,8 @@ body{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    width: 70%;
+    margin: 0 auto;
 }
 .nvf-section{
     display: flex;
@@ -67,4 +69,30 @@ body{
 }
 .nvf-wrapper.total-gross-income-wrapper input{
     width: 30%;
+}
+.nvf-wrapper.nvf-installments{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.nvf-caption{
+    color: red;
+}
+.nvf-wrapper.nvf-final{
+    background-color: #FADFDF;
+}
+.nvf-wrapper.nvf-final .nvf-input{
+    border: 2px dashed #FC1B1B;
+    background-color: transparent;
+}
+.nvf-wrapper.nvf-net-salary{
+    background-color: #E0FBC5;
+    grid-template-columns: 1fr;
+}
+.nvf-wrapper.nvf-net-salary .nvf-input{
+    background-color: transparent;
+    border: 2px dashed #7ED664;
+}
+.nvf-wrapper.nvf-more-info{
+    grid-template-columns: 1fr 1fr;
 }

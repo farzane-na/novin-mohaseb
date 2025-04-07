@@ -161,7 +161,7 @@
 
         <div class="nvf-section nvf-third">
             <h3>حقوق و مزایا</h3>
-            <span>این قسمت نیازی به وارد کردن ندارد</span>
+            <span class="nvf-caption">این قسمت نیازی به وارد کردن ندارد</span>
             <div class="nvf-wrapper">
                 <div class="nvf-field-wrapper nvf-daily-wage">
                     <label for="nvf_daily-wage">مزد روزانه</label>
@@ -223,6 +223,135 @@
             <div class="nvf-wrapper total-gross-income-wrapper">
                 <label for="nvf_total-gross-income">مجموع درآمد ناخالص قبل از کسورات</label>
                 <input id="nvf_total-gross-income" class="nvf-input" name="nvf_total-gross-income" type="text" value="102,050,568">
+            </div>
+        </div>
+
+        <div class="nvf-section nvf-forth">
+            <h3>اقساط و مساعده‌</h3>
+            <div class="nvf-wrapper nvf-installments">
+                <div class="nvf-field-wrapper nvf-helpful">
+                    <label for="nvf_helpful">مساعده</label>
+                    <input id="nvf_helpful" class="nvf-input" name="nvf_helpful" type="text" value="0">
+                </div>
+                <div class="nvf-field-wrapper nvf-supplementary-installment">
+                    <label for="nvf_supplementary-installment">قسط بیمه تکمیلی</label>
+                    <input id="nvf_supplementary-installment" class="nvf-input" name="nvf_supplementary-installment" type="text" value="0">
+                </div>
+                <div class="nvf-field-wrapper nvf-other-installments">
+                    <label for="nvf_other-installments">قسط وام یا سایر اقساط</label>
+                    <input id="nvf_other-installments" class="nvf-input" name="nvf_other-installments" type="text" value="0">
+                </div>
+            </div>
+        </div>
+
+        <div class="nvf-section nvf-forth">
+            <h3>کسورات قانونی</h3>
+            <span class="nvf-caption">موارد زیر بر اساس مصوبات ۱۴۰۳ تنظیم شده و نیازی به تغییر ندارد ولی در صورت تمایل می‌توانید آنها را تغییر دهید.</span>
+            <div class="nvf-wrapper ">
+                <div class="nvf-field-wrapper nvf-area">
+                    <p >آیا در مناطق کمتر توسعه یافته هستید؟*</p>
+                    <div class="nvf-radio">
+                        <div class="nvf-radio-wrapper">
+                            <label for="nvf_area-yes">بله</label>
+                            <input id="nvf_area-yes" class="nvf-input" name="nvf-area-radio" type="radio" required value="بله">
+                        </div>
+                        <div class="nvf-radio-wrapper">
+                            <label for="nvf_area-no">خیر</label>
+                            <input id="nvf_area-no" class="nvf-input" name="nvf-area-radio" type="radio" required value="خیر">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nvf-wrapper ">
+                <div class="nvf-field-wrapper nvf-housing-right">
+                    <p >حق مسکن*</p>
+                    <div class="nvf-radio">
+                        <div class="nvf-radio-wrapper">
+                            <label for="nvf_include-tax-housing">مشمول مالیات</label>
+                            <input id="nvf_include-tax-housing" class="nvf-input" name="nvf-housing-right-radio" type="radio" required value="مشمول مالیات">
+                        </div>
+                        <div class="nvf-radio-wrapper">
+                            <label for="nvf_not-include-tax-housing">غیر مشمول</label>
+                            <input id="nvf_not-include-tax-housing" class="nvf-input" name="nvf-housing-right-radio" type="radio" required value="غیر مشمول">
+                        </div>
+                    </div>
+                </div>
+                <div class="nvf-field-wrapper nvf-food-right">
+                    <p >حق خواروبار *</p>
+                    <div class="nvf-radio">
+                        <div class="nvf-radio-wrapper">
+                            <label for="nvf_include-tax-food">مشمول مالیات</label>
+                            <input id="nvf_include-tax-food" class="nvf-input" name="nvf-food-right-radio" type="radio" required value="مشمول مالبات">
+                        </div>
+                        <div class="nvf-radio-wrapper">
+                            <label for="nvf_not-include-tax-food">غیر مشمول</label>
+                            <input id="nvf_not-include-tax-food" class="nvf-input" name="nvf-food-right-radio" type="radio" required value="غیر شمول">
+                        </div>
+                    </div>
+                </div>
+                <div class="nvf-field-wrapper nvf-marriage-right">
+                    <p >حق تاهل*</p>
+                    <div class="nvf-radio">
+                        <div class="nvf-radio-wrapper">
+                            <label for="nvf_include-tax-marriage">مشمول مالیات</label>
+                            <input id="nvf_include-tax-marriage" class="nvf-input" name="nvf-marriage-right-radio" type="radio" required value="مشمول مالبات">
+                        </div>
+                        <div class="nvf-radio-wrapper">
+                            <label for="nvf_not-include-tax-marriage">غیر مشمول</label>
+                            <input id="nvf_not-include-tax-marriage" class="nvf-input" name="nvf-marriage-right-radio" type="radio" required value="غیر شمول">
+                        </div>
+                    </div>
+                </div>
+                <div class="nvf-field-wrapper nvf-employee-right">
+                    <p >حق بیمه سهم کارمند *</p>
+                    <div class="nvf-radio">
+                        <div class="nvf-radio-wrapper">
+                            <label for="nvf_employee2">2/7</label>
+                            <input id="nvf_employee2" class="nvf-input" name="nvf-employee-radio" type="radio" required value="2/7">
+                        </div>
+                        <div class="nvf-radio-wrapper">
+                            <label for="nvf_employee7">7/7</label>
+                            <input id="nvf_employee7" class="nvf-input" name="nvf-employee-radio" type="radio" required value="7/7">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nvf-wrapper nvf-final">
+                <div class="nvf-field-wrapper nvf-insurance-right">
+                    <label for="nvf_insurance-right">حق بیمه</label>
+                    <input id="nvf_insurance-right" class="nvf-input" name="nvf_insurance-right" type="text" value="7,143,540">
+                </div>
+                <div class="nvf-field-wrapper nvf-tax">
+                    <label for="nvf_tax">مالیات</label>
+                    <input id="nvf_tax" class="nvf-input" name="nvf_tax" type="text" value="0">
+                </div>
+                <div class="nvf-field-wrapper nvf-statutory-deductions">
+                    <label for="nvf_statutory-deductions">مجموع کسورات قانونی</label>
+                    <input id="nvf_statutory-deductions" class="nvf-input" name="nvf_statutory-deductions" type="text" value="7,143,540">
+                </div>
+            </div>
+        </div>
+
+        <div class="nvf-section nvf-sixth">
+            <div class="nvf-wrapper nvf-net-salary">
+                <div class="nvf-field-wrapper nvf-net-salary">
+                    <label for="nvf_net-salary">خالص حقوق و مزایای پرداختی</label>
+                    <input id="nvf_net-salary" class="nvf-input" name="nvf_net-salary" type="text" value="94,907,028">
+                </div>
+            </div>
+        </div>
+
+        <div class="nvf-section nvf-seventh">
+            <h3>اطلاعات تکمیلی</h3>
+            <div class="nvf-wrapper nvf-more-info">
+                <div class="nvf-field-wrapper nvf-user-phone">
+                    <label for="nvf_user-phone">شماره تلفن</label>
+                    <input id="nvf_user-phone" class="nvf-input" name="nvf_user-phone" type="text" required>
+                </div>
+                <div class="nvf-field-wrapper nvf-user-email">
+                    <label for="nvf_user-email">ایمیل</label>
+                    <input id="nvf_user-email" class="nvf-input" name="nvf_user-email" type="email">
+                </div>
             </div>
         </div>
     </form>
