@@ -116,3 +116,10 @@ body{
 .nvf-btn-wrapper .remove-information{
     background-color: #FA0A36;
 }
+.nvf-radio.nvf-tax-include{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
