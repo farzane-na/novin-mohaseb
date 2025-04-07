@@ -1,0 +1,56 @@
+@import url('https://v1.fontapi.ir/css/Yekan');
+html{
+    box-sizing: border-box;
+}
+body{
+    font-family: Yekan ;
+    font-size: 14px;
+}
+.nvf-form{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.nvf-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #EBECEC;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 30px;
+}
+.nvf-field-wrapper {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nvf-field-wrapper .nvf-input , .nvf-field-wrapper select{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Yekan;
+    font-size: 14px;
+}
+.nvf-field-wrapper input[type="radio"]{
+    -ms-transform: scale(1.35); /* IE 9 */
+  -webkit-transform: scale(1.35); /* Chrome, Safari, Opera */
+  transform: scale(1.35);
+  accent-color: #232323;
+}
+.nvf-radio{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.nvf-radio-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}

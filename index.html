@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    <form class="nvf-form" action="">
+        <div class="nvf-wrapper">
+            <div class="nvf-field-wrapper nvf-fullname">
+                <label for="nvf_fullname">نام و نام خانوادگی</label>
+                <input id="nvf_fullname" class="nvf-input" name="nvf_fullname" type="text" required>
+            </div>
+            <div class="nvf-field-wrapper nvf-workshop">
+                <label for="nvf_workshop">نام کارگاه</label>
+                <input id="nvf_workshop" class="nvf-input" name="nvf_workshop" type="text">
+            </div>
+            <div class="nvf-field-wrapper nvf-bank">
+                <label for="nvf_bank">بانک یا شماره حساب</label>
+                <input id="nvf_bank" class="nvf-input" name="nvf_bank" type="text">
+            </div>
+            <div class="nvf-field-wrapper nvf-date">
+                <label for="nvf_date">سال 1403 و ماه...</label>
+                <select name="nvf_date" id="nvf_date">
+                    <option value="فروردین">فروردین</option>
+                    <option value="اردیبهشت">اردیبهشت</option>
+                    <option value="خرداد">خرداد</option>
+                    <option value="تیر">تیر</option>
+                    <option value="مرداد">مرداد</option>
+                    <option value="شهریور">شهریور</option>
+                    <option value="مهر">مهر</option>
+                    <option value="آبان">آبان</option>
+                    <option value="آذر">آذر</option>
+                    <option value="دی">دی</option>
+                    <option value="بهمن">بهمن</option>
+                    <option value="اسفند">اسفند</option>
+                </select>
+            </div>
+        </div>
+        <div class="nvf-wrapper">
+            <div class="nvf-field-wrapper nvf-function">
+                <label for="nvf_function">کارکرد (روز)</label>
+                <input id="nvf_function" class="nvf-input" name="nvf_function" type="text" required value="31" min="1" max="31">
+            </div>
+            <div class="nvf-field-wrapper nvf-mission">
+                <label for="nvf_mission">روزهای ماموریت</label>
+                <input id="nvf_mission" class="nvf-input" name="nvf_mission" type="text" value="0" min="0">
+            </div>
+            <div class="nvf-field-wrapper nvf-overtime">
+                <label for="nvf_overtime">ساعات اضافه کاری</label>
+                <input id="nvf_overtime" class="nvf-input" name="nvf_overtime" type="text" value="0" min="0">
+            </div>
+            <div class="nvf-field-wrapper nvf-night-work">
+                <label for="nvf_night-work">ساعات شب کاری</label>
+                <input id="nvf_night-work" class="nvf-input" name="nvf_night-work" type="text" value="0" min="0">
+            </div>
+        </div>
+        <div class="nvf-wrapper">
+            <div class="nvf-field-wrapper nvf-off-substitute">
+                <label for="nvf_off-substitute">تعداد روز تعطیلی کاری با جایگزین</label>
+                <input id="nvf_off-substitute" class="nvf-input" name="nvf_off-substitute" type="text" value="0" min="0">
+            </div>
+            <div class="nvf-field-wrapper nvf-of-not-substitute">
+                <label for="nvf_of-not-substitute">تعداد روز تعطیلی کاری بی جایگزین</label>
+                <input id="nvf_of-not-substitute" class="nvf-input" name="nvf_of-not-substitute" type="text" value="0" min="0">
+            </div>
+            <div class="nvf-field-wrapper nvf-children">
+                <label for="nvf_children">تعداد فرزندان مشمول</label>
+                <input id="nvf_children" class="nvf-input" name="nvf_children" type="text" value="0" min="0">
+            </div>
+            <div class="nvf-field-wrapper nvf-work-history">
+                <label for="nvf_work-history">میزان سابقه کار</label>
+                <select name="nvf_work-history" id="nvf_work-history">
+                    <option value="0" selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="+19">+19</option>
+                </select>
+            </div>
+        </div>
+        <div class="nvf-wrapper">
+            <div class="nvf-field-wrapper nvf-shift">
+                <p >نوبت کار هستید؟</p>
+                <div class="nvf-radio">
+                    <div class="nvf-radio-wrapper">
+                        <label for="nvf_shift-yes">بله</label>
+                        <input id="nvf_shift-yes" class="nvf-input" name="nvf-shift-radio" type="radio" value="بله" required>
+                    </div>
+                    <div class="nvf-radio-wrapper">
+                        <label for="nvf_shift-no">خیر</label>
+                        <input id="nvf_shift-no" class="nvf-input" name="nvf-shift-radio" type="radio" value="خیر" required>
+                    </div>
+                </div>
+            </div>
+            <div class="nvf-field-wrapper nvf-calcute-extra">
+                <label for="nvf_calcute-extra">مبنای محاسبه اضافه کاری</label>
+                <select name="nvf_calcute-extra" id="nvf_calcute-extra">
+                    <option value="220" selected>220</option>
+                    <option value="205">205</option>
+                    <option value="192">192</option>
+                    <option value="176">176</option>
+                </select>
+            </div>
+            <div class="nvf-field-wrapper nvf-marriage">
+                <p >وضعیت تاهل</p>
+                <div class="nvf-radio">
+                    <div class="nvf-radio-wrapper">
+                        <label for="nvf_single">مجرد</label>
+                        <input id="nvf_single" class="nvf-input" name="nvf-marriage-radio" type="radio" required value="مجرد">
+                    </div>
+                    <div class="nvf-radio-wrapper">
+                        <label for="nvf_married">متاهل</label>
+                        <input id="nvf_married" class="nvf-input" name="nvf-marriage-radio" type="radio" required value="متاهل">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
