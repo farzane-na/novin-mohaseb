@@ -96,3 +96,23 @@ body{
 .nvf-wrapper.nvf-more-info{
     grid-template-columns: 1fr 1fr;
 }
+.nvf-btn-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.nvf-btn-wrapper .get-information , .nvf-btn-wrapper .remove-information{
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-family: Yekan
+}
+.nvf-btn-wrapper .get-information{
+    background-color: #58D803;
+}
+.nvf-btn-wrapper .remove-information{
+    background-color: #FA0A36;
+}

@@ -12,7 +12,7 @@
             <h3>اطلاعات اولیه</h3>
             <div class="nvf-wrapper">
                 <div class="nvf-field-wrapper nvf-fullname">
-                    <label for="nvf_fullname">نام و نام خانوادگی</label>
+                    <label for="nvf_fullname">نام و نام خانوادگی*</label>
                     <input id="nvf_fullname" class="nvf-input" name="nvf_fullname" type="text" required>
                 </div>
                 <div class="nvf-field-wrapper nvf-workshop">
@@ -43,7 +43,7 @@
             </div>
             <div class="nvf-wrapper">
                 <div class="nvf-field-wrapper nvf-function">
-                    <label for="nvf_function">کارکرد (روز)</label>
+                    <label for="nvf_function">کارکرد (روز)*</label>
                     <input id="nvf_function" class="nvf-input" name="nvf_function" type="text" required value="31" min="1" max="31">
                 </div>
                 <div class="nvf-field-wrapper nvf-mission">
@@ -100,7 +100,7 @@
             </div>
             <div class="nvf-wrapper">
                 <div class="nvf-field-wrapper nvf-shift">
-                    <p >نوبت کار هستید؟</p>
+                    <p >نوبت کار هستید؟*</p>
                     <div class="nvf-radio">
                         <div class="nvf-radio-wrapper">
                             <label for="nvf_shift-yes">بله</label>
@@ -122,7 +122,7 @@
                     </select>
                 </div>
                 <div class="nvf-field-wrapper nvf-marriage">
-                    <p >وضعیت تاهل</p>
+                    <p >وضعیت تاهل*</p>
                     <div class="nvf-radio">
                         <div class="nvf-radio-wrapper">
                             <label for="nvf_single">مجرد</label>
@@ -164,8 +164,8 @@
             <span class="nvf-caption">این قسمت نیازی به وارد کردن ندارد</span>
             <div class="nvf-wrapper">
                 <div class="nvf-field-wrapper nvf-daily-wage">
-                    <label for="nvf_daily-wage">مزد روزانه</label>
-                    <input id="nvf_daily-wage" class="nvf-input" name="nvf_daily-wage" type="text" value="2,388,728">
+                    <label for="nvf_daily-wage">مزد روزانه*</label>
+                    <input id="nvf_daily-wage" class="nvf-input" name="nvf_daily-wage" type="text" value="2,388,728" required>
                 </div>
                 <div class="nvf-field-wrapper nvf-base-daily-years">
                     <label for="nvf_base-daily-years">مزد و پایه سنوات روزانه</label>
@@ -345,7 +345,7 @@
             <h3>اطلاعات تکمیلی</h3>
             <div class="nvf-wrapper nvf-more-info">
                 <div class="nvf-field-wrapper nvf-user-phone">
-                    <label for="nvf_user-phone">شماره تلفن</label>
+                    <label for="nvf_user-phone">شماره تلفن*</label>
                     <input id="nvf_user-phone" class="nvf-input" name="nvf_user-phone" type="text" required>
                 </div>
                 <div class="nvf-field-wrapper nvf-user-email">
@@ -353,6 +353,11 @@
                     <input id="nvf_user-email" class="nvf-input" name="nvf_user-email" type="email">
                 </div>
             </div>
+        </div>
+
+        <div class="nvf-btn-wrapper">
+            <button type="submit" class="get-information">دانلود فیش حقوقی</button>
+            <button type="submit" class="remove-information">پاک کردن فرم</button>
         </div>
     </form>
     <script src="app.js"></script>
