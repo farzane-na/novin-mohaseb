@@ -12,6 +12,11 @@ body{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    gap: 30px;
+}
+.nvf-section{
+    display: flex;
+    flex-direction: column;
     gap: 15px;
 }
 .nvf-wrapper{
@@ -28,7 +33,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
-.nvf-field-wrapper .nvf-input , .nvf-field-wrapper select{
+.nvf-field-wrapper .nvf-input , .nvf-field-wrapper select , .nvf-wrapper.total-gross-income-wrapper input{
     background-color: #fff;
     border: 1px solid #ccc;
     padding: 10px;
@@ -53,4 +58,13 @@ body{
     justify-content: flex-start;
     align-items: center;
     gap: 5px;
+}
+.nvf-wrapper.total-gross-income-wrapper{
+    background-color: #D9F1F1;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.nvf-wrapper.total-gross-income-wrapper input{
+    width: 30%;
 }
